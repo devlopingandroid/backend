@@ -14,6 +14,10 @@ app.get('/contact',(req,res)=>{
     res.send("this is contact page");
 })
 
+app.get('/github',(req,res)=>{
+    res.send(githubData);
+});
+
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
